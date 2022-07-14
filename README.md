@@ -1,7 +1,5 @@
 # Cat-API
-API made in Python using FastAPI, it returns cat facts!
-Who doesn´t love cats?
-![Cute Cat](https://ibb.co/DgFHy0F)
+API made in Python using FastAPI, it returns cat facts!, Come on, who doesn´t love cats? :heart:
 ## Deploy app in docker
 Lets start by creating the image, enter the project folder and execute the following command in terminal:
 docker build -t cat_api .
