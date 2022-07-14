@@ -16,7 +16,7 @@ To view the API Documentation, enter the following link in your web browser:
 http://localhost:8080/docs
 
 ## Deploy on localhost
-Clone the github repository, then lets a virtualenv in the folder directory to install requirements("pip install virtualenv" if you dont have it.)
+Clone the github repository, then lets create a virtualenv in the folder directory to install requirements("pip install virtualenv" if you dont have it.)
 
 Create and virtualenv:
 ```console
@@ -38,7 +38,6 @@ Run project using uvicorn:
 cd .\src\
 uvicorn main:app --reload
 ```
-
 
 To view the API Documentation, enter the following link in your web browser:
 http://localhost:8080/docs
