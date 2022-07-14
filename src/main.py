@@ -18,12 +18,21 @@ async def show_cat_facts(
 ):
     try:
         response = requests.get(f'https://cat-fact.herokuapp.com/facts/random?amount={fact_amount}', timeout=30)
-
         # It filters the facts only by the current year.
         current_year = str(datetime.today().year)
+
+        # If the response is a dict, it converts it to a list
+        if type(response.json()) == dict:
+            response = [response.json()]
+        else:
+            response = response.json()
+        
         facts_filtered_by_date = [
-            fact for fact in response.json() if fact['updatedAt'][:4] == current_year
+            fact for fact in response if fact.get('updatedAt')[:4] == current_year
         ]
+
+        if not facts_filtered_by_date:
+            raise HTTPException(status_code=404, detail=f"Cant find facts from year: {current_year}")
         return facts_filtered_by_date
     except Timeout:
         raise HTTPException(status_code=404, detail="Cat API request timed out")
