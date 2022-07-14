@@ -1,0 +1,10 @@
+1. What are the supported data types in Python? Integers, Strings, Lists, Tuples and Dictionaries.
+2. What is the difference between tuples and lists in Python? That tuples are non mutables and lists are mutables, also lists have more built in methods, but tuples are faster.
+3. What are Python decorators? It´s a Pythonic way to change the befavior of an existing Function.
+4. What are generators in Python? Its used in Functions, to make it a generator, insteed of using return, we replace it with a yield, the difference is that a generator don´t save data in memory, making it good at maniplutating large amount of data.
+5. What are shallow and deep copy operations? That shallow copy makes copy of the object, using the same childobject that it copied, if we modify a element from the original list, it will affect the new one too, on the other side, deep copy makes a totally diferent object from the original one, so it will not affect if we change something in here.
+6. Explain Dependency Injection? Dependency injection allow us to have a more clean code, allowing us to have a more separated code, avoing it to be hardcorded.
+7. Explain how you can make a Python Script executable on Unix? 
+    - Add the following line at the top of the .py file: #!/usr/bin/env python3 (Specify your python version)
+    - chmod the file to make it executable
+    - then run the script in the directory of the file with: ./(scrip-name)
