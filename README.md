@@ -18,12 +18,12 @@ http://localhost:8080/docs
 ## Deploy on localhost
 Clone the github repository, then lets create a virtualenv in the folder directory to install requirements("pip install virtualenv" if you dont have it.)
 
-Create and virtualenv:
+Create an virtualenv:
 ```console
 virtualenv venv
 ```
 
-Lets install requierements:
+Lets install requirements:
 ```console
 pip install -r requirements.txt
 ```
