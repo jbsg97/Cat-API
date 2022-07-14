@@ -9,7 +9,7 @@ docker build -t cat_api .
 
 Then lets run the app:
 ```console
-run -d -p 8080:8080 --name cat_api cat_api
+docker run -d -p 8080:8080 --name cat_api cat_api
 ```
 
 To view the API Documentation, enter the following link in your web browser:
