@@ -6,7 +6,7 @@ client = TestClient(app)
 
 
 def test_show_cat_facts():
-    response = client.get("/cat-facts/1")
+    response = client.get("/cat-facts/50")
     assert response.status_code == 200
 
 def test_cat_facts_bigger_amount():
